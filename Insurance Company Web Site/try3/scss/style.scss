@@ -1,0 +1,482 @@
+@import "reset";
+@import "colors";
+@import "mixin";
+
+
+
+header {
+  background-color: $lightgray;
+
+  & .col-9 {
+    &>.inner {
+      &>.text {
+        &>.font-25 {
+          font-size: 25px;
+          color: $dark-green;
+        }
+
+        &>.text-green {
+          color: $dark-green;
+        }
+      }
+    }
+
+    &>.col-8 {
+      &>.navbar {
+        &>.navbar-collapse {
+          transition: all .4s linear;
+
+          &>.navbar-nav {
+            &>.nav-item {
+              &>.nav-link {
+                font-size: 19px !important;
+                color: $dark-green !important;
+
+              }
+            }
+
+            &>.nav-item:not(.active) {
+              &>.nav-link:hover {
+                color: $golden !important;
+              }
+            }
+
+            &>.nav-item.active {
+              &>.nav-link {
+                color: red !important;
+                opacity: 0.5 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .myHover:hover {
+    background: black !important;
+
+    // transition: all 5s ease;
+    a {
+      color: yellow !important;
+    }
+  }
+
+  & .col-3 {
+
+    .head-font {
+      font-size: 16px;
+    }
+
+    span.text-darkgreen.number {
+      font-size: 17px;
+      color: $dark-green;
+
+    }
+  }
+
+  #myMenu2 {
+    margin: -30px 0 0 110px;
+    transition: opacity .6s ease;
+    opacity: 0;
+  }
+}
+
+main {
+  &>.container {
+    &>.row {
+      &>.left-side {
+        &>.row {
+          &>.col-12 {
+            &>section#first {
+              &>.container {
+                &>.row {
+                  &>.col-12 {
+                    &>#home {
+                      height: 300px;
+                      background-image: url(../images/home.webp);
+                      background-position: center;
+                      background-size: cover;
+
+                      &>.fonts {
+                        background-color: $golden;
+                        font-size: 25px;
+                        color: $dark-green;
+                        letter-spacing: 1px;
+                      }
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+
+          &>.col-12 {
+            &>section#second {
+              &>.container {
+                &>.row {
+                  &>.col-12 {
+                    &>.card-deck {
+                      &>.col-12 {
+                        &>.card {
+
+                          &>.card-image {
+                            height: 100px;
+                          }
+
+                          &>.card-footer {
+                            & .read-more {
+                              width: 120px;
+
+                              &>.b1-top {
+                                border-bottom: 12px solid #ffc107;
+                                bottom: 50% !important;
+                                border-left: 0;
+                                border-right: 20px solid transparent;
+                                position: absolute;
+                                right: -20px;
+                              }
+
+                              &>.b1-bottom {
+                                border-top: 12px solid #ffc107;
+                                top: 50% !important;
+                                border-left: 0;
+                                border-right: 20px solid transparent;
+                                position: absolute;
+                                right: -20px;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                    }
+
+                  }
+
+
+
+                }
+              }
+            }
+
+            // section our-team start
+            >section#team {
+              &>.container {
+                &>.row {
+                  &>.my-team-card {
+                    &>.team-card {
+                      height: 350px;
+                      opacity: 1;
+                      background-color: #1af716c9 !important;
+                      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 38%, rgba(0, 0, 0, 0.4) 100%);
+
+
+                      &>.yellow-card {
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+
+                        &>.team-card-2 {
+                          bottom: 10px;
+
+                          &>.image {
+                            width: 40px;
+                          }
+                        }
+
+
+                      }
+                    }
+
+                  }
+
+
+                }
+              }
+            }
+            // section our-team end
+
+            // section contact start
+            & > section#contact{
+             & > .container{
+                & > .row{
+                  background-color: $lightgray;
+                 & > .my-heading{
+              
+                 & > .heading::after {
+                    content: ' ';
+                    position: absolute;
+                    width: 45px;
+                    height: 4px;
+                    background-color: #e67e22;
+                    bottom: 0;
+                   }
+
+               & > form{
+                  .my-form{
+                     & > input.my-box{
+                       transition: all 1s;
+                       transition-timing-function: linear;
+                       padding-left: 0;
+                       border-bottom: 1px  solid #ccc!important;
+                     }
+                    & > span.line{
+                       bottom: -1px;
+                       left: 0;
+                       right: auto;
+                       width: 0;
+                       height: 2px;
+                       transition: ease all 0.35s;
+                       background-color: #d9832e;
+                   }
+                  & > .my-box:focus + .line{
+                     width: 100%;
+                   }
+                     }
+                 }
+
+                  }
+            }
+              }
+            }
+            // section contact end 
+            
+          }
+
+          &>.col-12 {
+            &>section#third {
+              &>.container {
+                &>.row {
+                  &>.col-12 {
+                    &>#travel {
+                      &>.card {
+
+                        &>div.img {
+                          overflow: hidden;
+                          height: 350px;
+
+                          &>img {
+                            transition: ease all 0.35s;
+
+                          }
+                        }
+
+
+                        &>.overlay {
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                          background-color: #00000075;
+                          background-blend-mode: color-burn;
+                          visibility: hidden;
+
+                          &>.text-light {
+                            transition: ease all 0.35s;
+                            margin-left: -15%;
+                            visibility: hidden;
+                            opacity: 0;
+
+                            &>.por-h-fonts {
+                              font-size: 25px;
+                            }
+                          }
+
+                        }
+
+
+                      }
+
+                      .card:hover {
+                        &>.overlay {
+                          visibility: visible;
+
+                          .text-light {
+                            visibility: visible;
+                            margin-left: 0;
+                            opacity: 1;
+                          }
+                        }
+
+                        &>div.img {
+                          &>img {
+                            transform: scale(1.1);
+                          }
+                        }
+
+                      }
+                    }
+                  }
+
+                  &>.col-3 {
+                    background-color: $dark-green;
+
+                    .text-lightgray {
+                      color: lightgray;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &>.right-side {
+        &>.row {
+          &>.col-12 {
+
+            background-color: $lightgreen;
+
+          }
+
+          &>.col-12 {
+            background-color: $dark-green;
+          }
+
+          &>.col-12 {
+
+            background-color: $dark-green;
+
+            .text-lightgray {
+              color: lightgray;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+footer.ft-baccol {
+  background-color: #111 !important;
+
+
+  .social-links {
+    #social {
+
+      .my-soc-links {
+        transition: all 0.5s;
+
+        &>span::before {
+          margin-left: 0;
+          font-size: 20px;
+        }
+
+      }
+
+      .my-soc-links:hover {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #navbarTogglerDemo01 {
+    max-height: 100% !important;
+  }
+
+  // team-card start
+  section {
+    .team-card {
+      transition: linear all 0.3s !important;
+      opacity: .7 !important;
+
+      .yellow-card {
+        display: none !important;
+        transition: linear all 0.3s !important;
+
+      }
+    }
+
+    .my-team-card:hover .team-card {
+      transform: rotateY(180deg) !important;
+
+      .yellow-card {
+        transform: rotateY(180deg) !important;
+        display: block !important;
+
+      }
+    }
+
+  }
+
+  // team-card end
+
+
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    .navbar-collapse {
+      opacity: 1;
+    }
+  }
+
+  section#third {
+    .my-fontss {
+      font-size: 14px !important;
+    }
+  }
+
+  .fonts {
+    font-size: 17px !important;
+  }
+
+  .head-font {
+    font-size: 15px !important;
+  }
+
+  .number {
+    font-size: 16px !important;
+  }
+
+  #home {
+    height: 175px !important;
+  }
+
+  .card-deck {
+    h5 {
+      font-size: 17px;
+    }
+  }
+
+  // .logo-2{
+  //   margin-top: -50px;
+  // }
+}
+
+@media only screen and (max-width: 576px) {
+
+  // section#third{
+  .my-fontss {
+    font-size: 12px !important;
+  }
+
+  // }
+  .fonts {
+    font-size: 12px !important;
+  }
+
+  .head-font {
+    font-size: 13px !important;
+  }
+
+  .number {
+    font-size: 15px !important;
+  }
+
+  #home {
+    height: 150px !important;
+  }
+
+  //  .logo-2{
+  //    margin-top: -150px;
+  //  }
+}

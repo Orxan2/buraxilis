@@ -1,0 +1,32 @@
+.radio_btn {
+    background: url(../images/tick.svg);
+    width: 30px;
+    height: 30px;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+}
+
+.myButton {
+    padding: 5px 100px;
+    font-size: 30px;
+}
+
+.myButton:hover {
+    background-color: green !important;
+}
+.recaptcha{
+    width: 304px;
+    height: 78px;
+
+.g-recaptcha-response {
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(193, 193, 193);
+    margin: 10px 25px;
+
+    resize: none;
+}
+
+}
